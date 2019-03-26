@@ -45,7 +45,7 @@ function Fixed() {
 
   else{
     if(window.scrollY>window.innerHeight-1){
-      header2.style.width="97.5vw";
+      header2.style.width="100%";
       header2.style.position="fixed";
       header2.style.zIndex= 1000;
       header2.style.backgroundColor="white";
@@ -115,12 +115,16 @@ function animated(param,param2){
   var hauteur3= div3.offsetTop;
   if (hauteur1 <= param2 && param2 < hauteur2) {
     if(param!=1){
-      document.getElementById("jauge1").style.visibility = "visible"
+      document.getElementById("jauge1").style.visibility = "visible";
       document.getElementById("jauge2").style.visibility = "visible";
       document.getElementById("jauge3").style.visibility = "visible";
+      document.getElementById("jauge4").style.visibility = "visible";
+      document.getElementById("jauge5").style.visibility = "visible";
       document.getElementById("jauge1").style.WebkitAnimation = "slider1 2s";
       document.getElementById("jauge2").style.WebkitAnimation = "slider2 2s";
       document.getElementById("jauge3").style.WebkitAnimation = "slider3 2s";
+      document.getElementById("jauge4").style.WebkitAnimation = "slider4 2s";
+      document.getElementById("jauge5").style.WebkitAnimation = "slider5 2s";
       param++;
     }
   }
